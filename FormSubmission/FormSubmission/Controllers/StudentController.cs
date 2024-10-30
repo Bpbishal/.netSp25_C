@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+
+using FormSubmission.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,9 +13,16 @@ namespace FormSubmission.Controllers
     {
         [HttpGet]
         public ActionResult Create() {
-            ViewBag.Name = Request["Name"];
-            ViewBag.Id = Request["Id"];
-            return View();
+            //ViewBag.Name = Request["Name"];
+            //ViewBag.Id = Request["Id"];
+            return View(new Student());
+        }
+        [HttpPost]
+        public ActionResult Create(Student s) {
+            if (ModelState.IsValid) {
+                return RedirectToAction("Index","Home");
+            }
+            return View(s);
         }
         /*[HttpPost]
         public ActionResult Create(FormCollection fc) {
@@ -20,11 +30,11 @@ namespace FormSubmission.Controllers
             ViewBag.Id = fc["Id"];
             return View();
         }*/
-        [HttpPost]
-        public ActionResult Create(string Name) {
+        /*[HttpPost]
+        public ActionResult Create(string Name,int ID) {
             ViewBag.Name = Name;
-           
+            ViewBag.Id = ID;
             return View();
-        }
+        }*/
     }
 }

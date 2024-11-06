@@ -38,5 +38,22 @@ namespace IntroEF.Controllers
             }
             return View(data);
         }
+        [HttpGet]
+        public ActionResult Edit(int id) {
+            var data = db.Students.Find(id);
+            return View(data);
+        }
+        [HttpPost]
+        public ActionResult Edit(Student formObj) {
+            var exObj = db.Students.Find(formObj.Id);
+            formObj.Cgpa = exObj.Cgpa;
+            db.Entry(exObj).CurrentValues.SetValues(formObj);
+            //exObj.Name = formObj.Name;
+            //exObj.Cgpa = formObj.Cgpa;
+            db.SaveChanges();
+            return RedirectToAction("List");
+
+            
+        }
     }
 }

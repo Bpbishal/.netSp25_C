@@ -55,5 +55,7 @@ namespace IntroEF.Controllers
 
             
         }
+        //
+        //db.Students.Remove(exObj)
     }
 }

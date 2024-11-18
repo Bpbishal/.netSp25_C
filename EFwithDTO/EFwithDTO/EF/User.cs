@@ -12,15 +12,12 @@ namespace EFwithDTO.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Cgpa { get; set; }
-        public Nullable<System.DateTime> Dob { get; set; }
-        public int Age { get; set; }
-        public Nullable<int> DeptId { get; set; }
-    
-        public virtual Department Department { get; set; }
+        public string UName { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; }
     }
 }

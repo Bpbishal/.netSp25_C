@@ -8,6 +8,9 @@
         <EntityTypeShape EntityType="StudentDB_C_F24Model.Cours" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="StudentDB_C_F24Model.Department" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="StudentDB_C_F24Model.Student" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="StudentDB_C_F24Model.FK_Courses_Departments" />
+        <AssociationConnector Association="StudentDB_C_F24Model.FK_Students_Departments" />
+        <EntityTypeShape EntityType="StudentDB_C_F24Model.User" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,4 +1,5 @@
-﻿using EFwithDTO.DTOs;
+﻿using EFwithDTO.Auth;
+using EFwithDTO.DTOs;
 using EFwithDTO.EF;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Web.Mvc;
 
 namespace EFwithDTO.Controllers
 {
+    [Logged]
     public class DepartmentController : Controller
     {
         // GET: Department
@@ -33,6 +35,7 @@ namespace EFwithDTO.Controllers
             }
             return list;
         }
+        [AllowAnonymous]
         public ActionResult List()
         {
             var data = db.Departments.ToList();
@@ -72,6 +75,8 @@ namespace EFwithDTO.Controllers
         public ActionResult Details(int id)
         {
             var data = db.Departments.Find(id);
+            var test = data.Students;
+            var test2 = data.Courses;
             return View(Convert(data));
         }
         [HttpGet]

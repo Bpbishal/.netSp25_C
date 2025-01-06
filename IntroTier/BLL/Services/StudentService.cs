@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BLL.DTOs;
+using DAL;
 using DAL.EF;
 using DAL.Repos;
 using System;
@@ -22,7 +23,7 @@ namespace BLL.Services
            
         }
         public static List<StudentDTO> Get() {
-            var repo = new StudentRepo();
+            var repo = DataAccess.StudentData();
             var data = repo.Get();
             var ret = GetMapper().Map<List<StudentDTO>>(data);
             return ret;
@@ -32,8 +33,8 @@ namespace BLL.Services
             //convert to EF model
             
             var ret = GetMapper().Map<Student>(s);
-            var repo = new StudentRepo();
-            repo.Create(ret);
+            var repo = DataAccess.StudentData();
+            repo.Add(ret);
         }
     }
 }

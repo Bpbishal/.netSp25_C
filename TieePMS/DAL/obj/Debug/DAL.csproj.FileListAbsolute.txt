@@ -12,3 +12,6 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.pdb
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.Migrations.InitDB.resources
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.Migrations.UserAdded.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.Migrations.TokenAdded.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\TieePMS\DAL\obj\Debug\DAL.Migrations.TokenAdded2.resources

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (TempData["Msg"] != null) { 
+    <p class="alert alert-info">@TempData["Msg"]</p>
+}
+<h2>Index</h2>
+<form method="post">
+    <input type="number" name="SId" class="form-control" placeholder="Enter Student Id" />
+    <input type="submit" value="Submit" class="btn btn-primary" />
+</form>
+

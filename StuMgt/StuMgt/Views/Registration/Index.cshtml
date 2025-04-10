@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{ 
+    bool HasCourse(int id){
+        foreach (var c in ViewBag.CourseStudents) {
+            if (c.CourseId == id) return true;
+        }
+        return false;
+    }
+}
+<h2>Registraton for Student ID: @Session["Id"]</h2>
+
+<form method="post">
+    <ul>
+        @foreach (var item in Model) { 
+            <li><input type="checkbox" checked="@HasCourse(item.Id)" value="@item.Id" name="Courses[]"> @item.Name (@item.CourseStudents.Count/@item.MaxCapacity)</li>
+        }
+    </ul>
+    <input type="submit" value="Save" class="btn btn-success"/>
+</form>

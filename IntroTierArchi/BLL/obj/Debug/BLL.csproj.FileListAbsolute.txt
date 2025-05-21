@@ -10,3 +10,5 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\BLL\obj\Debug\BLL.pdb
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\BLL\bin\Debug\EntityFramework.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\BLL\bin\Debug\DAL.dll.config
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\BLL\bin\Debug\AutoMapper.xml

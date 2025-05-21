@@ -1,4 +1,5 @@
-﻿using BLL.Services;
+﻿using BLL.DTOs;
+using BLL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,12 @@ namespace APiApp.Controllers
         public HttpResponseMessage Get() {
             var data = CategoryService.Get();
             return Request.CreateResponse(HttpStatusCode.OK,data);
+        }
+        [HttpPost]
+        [Route("api/category/create")]
+        public HttpResponseMessage Post(CategoryDTO c) {
+            CategoryService.Create(c);
+            return Request.CreateResponse(HttpStatusCode.OK, "Inserted");
         }
     }
 }

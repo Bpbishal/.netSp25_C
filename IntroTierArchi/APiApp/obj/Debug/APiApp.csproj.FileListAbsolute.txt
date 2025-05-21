@@ -72,3 +72,7 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\EntityFramework.d
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\DAL.pdb
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\DAL.dll.config
 C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\EntityFramework.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\AutoMapper.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\AutoMapper.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\C\IntroTierArchi\APiApp\bin\EntityFramework.SqlServer.xml
